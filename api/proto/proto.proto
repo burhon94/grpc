@@ -7,6 +7,10 @@ option go_package = "/api";
 service GService {
   rpc Add(Req) returns (Resp) {}
   rpc Minus(Req) returns (Resp) {}
+  rpc Multiple(Req) returns (Resp) {}
+  rpc Dived(Req) returns (Resp) {}
+  rpc PercentAdd(Req) returns (Resp) {}
+  rpc PercentMinus(Req) returns (Resp) {}
 
 }
 

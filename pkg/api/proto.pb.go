@@ -139,10 +139,19 @@ var file_proto_proto_rawDesc = []byte{
 	0x20, 0x01, 0x28, 0x05, 0x52, 0x01, 0x78, 0x12, 0x0c, 0x0a, 0x01, 0x79, 0x18, 0x02, 0x20, 0x01,
 	0x28, 0x05, 0x52, 0x01, 0x79, 0x22, 0x1e, 0x0a, 0x04, 0x52, 0x65, 0x73, 0x70, 0x12, 0x16, 0x0a,
 	0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x06, 0x72,
-	0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0x48, 0x0a, 0x08, 0x47, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63,
-	0x65, 0x12, 0x1c, 0x0a, 0x03, 0x41, 0x64, 0x64, 0x12, 0x08, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52,
-	0x65, 0x71, 0x1a, 0x09, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x22, 0x00, 0x12,
-	0x1e, 0x0a, 0x05, 0x4d, 0x69, 0x6e, 0x75, 0x73, 0x12, 0x08, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52,
+	0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0xd7, 0x01, 0x0a, 0x08, 0x47, 0x53, 0x65, 0x72, 0x76, 0x69,
+	0x63, 0x65, 0x12, 0x1c, 0x0a, 0x03, 0x41, 0x64, 0x64, 0x12, 0x08, 0x2e, 0x61, 0x70, 0x69, 0x2e,
+	0x52, 0x65, 0x71, 0x1a, 0x09, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x22, 0x00,
+	0x12, 0x1e, 0x0a, 0x05, 0x4d, 0x69, 0x6e, 0x75, 0x73, 0x12, 0x08, 0x2e, 0x61, 0x70, 0x69, 0x2e,
+	0x52, 0x65, 0x71, 0x1a, 0x09, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x22, 0x00,
+	0x12, 0x21, 0x0a, 0x08, 0x4d, 0x75, 0x6c, 0x74, 0x69, 0x70, 0x6c, 0x65, 0x12, 0x08, 0x2e, 0x61,
+	0x70, 0x69, 0x2e, 0x52, 0x65, 0x71, 0x1a, 0x09, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52, 0x65, 0x73,
+	0x70, 0x22, 0x00, 0x12, 0x1e, 0x0a, 0x05, 0x44, 0x69, 0x76, 0x65, 0x64, 0x12, 0x08, 0x2e, 0x61,
+	0x70, 0x69, 0x2e, 0x52, 0x65, 0x71, 0x1a, 0x09, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52, 0x65, 0x73,
+	0x70, 0x22, 0x00, 0x12, 0x23, 0x0a, 0x0a, 0x50, 0x65, 0x72, 0x63, 0x65, 0x6e, 0x74, 0x41, 0x64,
+	0x64, 0x12, 0x08, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52, 0x65, 0x71, 0x1a, 0x09, 0x2e, 0x61, 0x70,
+	0x69, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x22, 0x00, 0x12, 0x25, 0x0a, 0x0c, 0x50, 0x65, 0x72, 0x63,
+	0x65, 0x6e, 0x74, 0x4d, 0x69, 0x6e, 0x75, 0x73, 0x12, 0x08, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52,
 	0x65, 0x71, 0x1a, 0x09, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x22, 0x00, 0x42,
 	0x06, 0x5a, 0x04, 0x2f, 0x61, 0x70, 0x69, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
@@ -167,10 +176,18 @@ var file_proto_proto_goTypes = []interface{}{
 var file_proto_proto_depIdxs = []int32{
 	0, // 0: api.GService.Add:input_type -> api.Req
 	0, // 1: api.GService.Minus:input_type -> api.Req
-	1, // 2: api.GService.Add:output_type -> api.Resp
-	1, // 3: api.GService.Minus:output_type -> api.Resp
-	2, // [2:4] is the sub-list for method output_type
-	0, // [0:2] is the sub-list for method input_type
+	0, // 2: api.GService.Multiple:input_type -> api.Req
+	0, // 3: api.GService.Dived:input_type -> api.Req
+	0, // 4: api.GService.PercentAdd:input_type -> api.Req
+	0, // 5: api.GService.PercentMinus:input_type -> api.Req
+	1, // 6: api.GService.Add:output_type -> api.Resp
+	1, // 7: api.GService.Minus:output_type -> api.Resp
+	1, // 8: api.GService.Multiple:output_type -> api.Resp
+	1, // 9: api.GService.Dived:output_type -> api.Resp
+	1, // 10: api.GService.PercentAdd:output_type -> api.Resp
+	1, // 11: api.GService.PercentMinus:output_type -> api.Resp
+	6, // [6:12] is the sub-list for method output_type
+	0, // [0:6] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
@@ -241,6 +258,10 @@ const _ = grpc.SupportPackageIsVersion6
 type GServiceClient interface {
 	Add(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error)
 	Minus(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error)
+	Multiple(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error)
+	Dived(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error)
+	PercentAdd(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error)
+	PercentMinus(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error)
 }
 
 type gServiceClient struct {
@@ -269,10 +290,50 @@ func (c *gServiceClient) Minus(ctx context.Context, in *Req, opts ...grpc.CallOp
 	return out, nil
 }
 
+func (c *gServiceClient) Multiple(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error) {
+	out := new(Resp)
+	err := c.cc.Invoke(ctx, "/api.GService/Multiple", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *gServiceClient) Dived(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error) {
+	out := new(Resp)
+	err := c.cc.Invoke(ctx, "/api.GService/Dived", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *gServiceClient) PercentAdd(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error) {
+	out := new(Resp)
+	err := c.cc.Invoke(ctx, "/api.GService/PercentAdd", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *gServiceClient) PercentMinus(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error) {
+	out := new(Resp)
+	err := c.cc.Invoke(ctx, "/api.GService/PercentMinus", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // GServiceServer is the server API for GService service.
 type GServiceServer interface {
 	Add(context.Context, *Req) (*Resp, error)
 	Minus(context.Context, *Req) (*Resp, error)
+	Multiple(context.Context, *Req) (*Resp, error)
+	Dived(context.Context, *Req) (*Resp, error)
+	PercentAdd(context.Context, *Req) (*Resp, error)
+	PercentMinus(context.Context, *Req) (*Resp, error)
 }
 
 // UnimplementedGServiceServer can be embedded to have forward compatible implementations.
@@ -284,6 +345,18 @@ func (*UnimplementedGServiceServer) Add(context.Context, *Req) (*Resp, error) {
 }
 func (*UnimplementedGServiceServer) Minus(context.Context, *Req) (*Resp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Minus not implemented")
+}
+func (*UnimplementedGServiceServer) Multiple(context.Context, *Req) (*Resp, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Multiple not implemented")
+}
+func (*UnimplementedGServiceServer) Dived(context.Context, *Req) (*Resp, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Dived not implemented")
+}
+func (*UnimplementedGServiceServer) PercentAdd(context.Context, *Req) (*Resp, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method PercentAdd not implemented")
+}
+func (*UnimplementedGServiceServer) PercentMinus(context.Context, *Req) (*Resp, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method PercentMinus not implemented")
 }
 
 func RegisterGServiceServer(s *grpc.Server, srv GServiceServer) {
@@ -326,6 +399,78 @@ func _GService_Minus_Handler(srv interface{}, ctx context.Context, dec func(inte
 	return interceptor(ctx, in, info, handler)
 }
 
+func _GService_Multiple_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Req)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(GServiceServer).Multiple(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/api.GService/Multiple",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(GServiceServer).Multiple(ctx, req.(*Req))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _GService_Dived_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Req)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(GServiceServer).Dived(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/api.GService/Dived",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(GServiceServer).Dived(ctx, req.(*Req))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _GService_PercentAdd_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Req)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(GServiceServer).PercentAdd(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/api.GService/PercentAdd",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(GServiceServer).PercentAdd(ctx, req.(*Req))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _GService_PercentMinus_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Req)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(GServiceServer).PercentMinus(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/api.GService/PercentMinus",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(GServiceServer).PercentMinus(ctx, req.(*Req))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 var _GService_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "api.GService",
 	HandlerType: (*GServiceServer)(nil),
@@ -337,6 +482,22 @@ var _GService_serviceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "Minus",
 			Handler:    _GService_Minus_Handler,
+		},
+		{
+			MethodName: "Multiple",
+			Handler:    _GService_Multiple_Handler,
+		},
+		{
+			MethodName: "Dived",
+			Handler:    _GService_Dived_Handler,
+		},
+		{
+			MethodName: "PercentAdd",
+			Handler:    _GService_PercentAdd_Handler,
+		},
+		{
+			MethodName: "PercentMinus",
+			Handler:    _GService_PercentMinus_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
