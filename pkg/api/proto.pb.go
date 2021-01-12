@@ -29,7 +29,7 @@ const (
 // of the legacy proto package is being used.
 const _ = proto.ProtoPackageIsVersion4
 
-type AddReq struct {
+type Req struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -38,8 +38,8 @@ type AddReq struct {
 	Y int32 `protobuf:"varint,2,opt,name=y,proto3" json:"y,omitempty"`
 }
 
-func (x *AddReq) Reset() {
-	*x = AddReq{}
+func (x *Req) Reset() {
+	*x = Req{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_proto_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -47,13 +47,13 @@ func (x *AddReq) Reset() {
 	}
 }
 
-func (x *AddReq) String() string {
+func (x *Req) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*AddReq) ProtoMessage() {}
+func (*Req) ProtoMessage() {}
 
-func (x *AddReq) ProtoReflect() protoreflect.Message {
+func (x *Req) ProtoReflect() protoreflect.Message {
 	mi := &file_proto_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -65,26 +65,26 @@ func (x *AddReq) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use AddReq.ProtoReflect.Descriptor instead.
-func (*AddReq) Descriptor() ([]byte, []int) {
+// Deprecated: Use Req.ProtoReflect.Descriptor instead.
+func (*Req) Descriptor() ([]byte, []int) {
 	return file_proto_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *AddReq) GetX() int32 {
+func (x *Req) GetX() int32 {
 	if x != nil {
 		return x.X
 	}
 	return 0
 }
 
-func (x *AddReq) GetY() int32 {
+func (x *Req) GetY() int32 {
 	if x != nil {
 		return x.Y
 	}
 	return 0
 }
 
-type AddResp struct {
+type Resp struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -92,8 +92,8 @@ type AddResp struct {
 	Result int32 `protobuf:"varint,1,opt,name=result,proto3" json:"result,omitempty"`
 }
 
-func (x *AddResp) Reset() {
-	*x = AddResp{}
+func (x *Resp) Reset() {
+	*x = Resp{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_proto_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -101,13 +101,13 @@ func (x *AddResp) Reset() {
 	}
 }
 
-func (x *AddResp) String() string {
+func (x *Resp) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*AddResp) ProtoMessage() {}
+func (*Resp) ProtoMessage() {}
 
-func (x *AddResp) ProtoReflect() protoreflect.Message {
+func (x *Resp) ProtoReflect() protoreflect.Message {
 	mi := &file_proto_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -119,12 +119,12 @@ func (x *AddResp) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use AddResp.ProtoReflect.Descriptor instead.
-func (*AddResp) Descriptor() ([]byte, []int) {
+// Deprecated: Use Resp.ProtoReflect.Descriptor instead.
+func (*Resp) Descriptor() ([]byte, []int) {
 	return file_proto_proto_rawDescGZIP(), []int{1}
 }
 
-func (x *AddResp) GetResult() int32 {
+func (x *Resp) GetResult() int32 {
 	if x != nil {
 		return x.Result
 	}
@@ -135,15 +135,16 @@ var File_proto_proto protoreflect.FileDescriptor
 
 var file_proto_proto_rawDesc = []byte{
 	0x0a, 0x0b, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x03, 0x61,
-	0x70, 0x69, 0x22, 0x24, 0x0a, 0x06, 0x41, 0x64, 0x64, 0x52, 0x65, 0x71, 0x12, 0x0c, 0x0a, 0x01,
-	0x78, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x01, 0x78, 0x12, 0x0c, 0x0a, 0x01, 0x79, 0x18,
-	0x02, 0x20, 0x01, 0x28, 0x05, 0x52, 0x01, 0x79, 0x22, 0x21, 0x0a, 0x07, 0x41, 0x64, 0x64, 0x52,
-	0x65, 0x73, 0x70, 0x12, 0x16, 0x0a, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20,
-	0x01, 0x28, 0x05, 0x52, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0x2b, 0x0a, 0x05, 0x41,
-	0x64, 0x64, 0x65, 0x72, 0x12, 0x22, 0x0a, 0x03, 0x41, 0x64, 0x64, 0x12, 0x0b, 0x2e, 0x61, 0x70,
-	0x69, 0x2e, 0x41, 0x64, 0x64, 0x52, 0x65, 0x71, 0x1a, 0x0c, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x41,
-	0x64, 0x64, 0x52, 0x65, 0x73, 0x70, 0x22, 0x00, 0x42, 0x06, 0x5a, 0x04, 0x2f, 0x61, 0x70, 0x69,
-	0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x70, 0x69, 0x22, 0x21, 0x0a, 0x03, 0x52, 0x65, 0x71, 0x12, 0x0c, 0x0a, 0x01, 0x78, 0x18, 0x01,
+	0x20, 0x01, 0x28, 0x05, 0x52, 0x01, 0x78, 0x12, 0x0c, 0x0a, 0x01, 0x79, 0x18, 0x02, 0x20, 0x01,
+	0x28, 0x05, 0x52, 0x01, 0x79, 0x22, 0x1e, 0x0a, 0x04, 0x52, 0x65, 0x73, 0x70, 0x12, 0x16, 0x0a,
+	0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x06, 0x72,
+	0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0x48, 0x0a, 0x08, 0x47, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63,
+	0x65, 0x12, 0x1c, 0x0a, 0x03, 0x41, 0x64, 0x64, 0x12, 0x08, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52,
+	0x65, 0x71, 0x1a, 0x09, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x22, 0x00, 0x12,
+	0x1e, 0x0a, 0x05, 0x4d, 0x69, 0x6e, 0x75, 0x73, 0x12, 0x08, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52,
+	0x65, 0x71, 0x1a, 0x09, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x22, 0x00, 0x42,
+	0x06, 0x5a, 0x04, 0x2f, 0x61, 0x70, 0x69, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -160,14 +161,16 @@ func file_proto_proto_rawDescGZIP() []byte {
 
 var file_proto_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_proto_proto_goTypes = []interface{}{
-	(*AddReq)(nil),  // 0: api.AddReq
-	(*AddResp)(nil), // 1: api.AddResp
+	(*Req)(nil),  // 0: api.Req
+	(*Resp)(nil), // 1: api.Resp
 }
 var file_proto_proto_depIdxs = []int32{
-	0, // 0: api.Adder.Add:input_type -> api.AddReq
-	1, // 1: api.Adder.Add:output_type -> api.AddResp
-	1, // [1:2] is the sub-list for method output_type
-	0, // [0:1] is the sub-list for method input_type
+	0, // 0: api.GService.Add:input_type -> api.Req
+	0, // 1: api.GService.Minus:input_type -> api.Req
+	1, // 2: api.GService.Add:output_type -> api.Resp
+	1, // 3: api.GService.Minus:output_type -> api.Resp
+	2, // [2:4] is the sub-list for method output_type
+	0, // [0:2] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
@@ -180,7 +183,7 @@ func file_proto_proto_init() {
 	}
 	if !protoimpl.UnsafeEnabled {
 		file_proto_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*AddReq); i {
+			switch v := v.(*Req); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -192,7 +195,7 @@ func file_proto_proto_init() {
 			}
 		}
 		file_proto_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*AddResp); i {
+			switch v := v.(*Resp); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -232,72 +235,108 @@ var _ grpc.ClientConnInterface
 // is compatible with the grpc package it is being compiled against.
 const _ = grpc.SupportPackageIsVersion6
 
-// AdderClient is the client API for Adder service.
+// GServiceClient is the client API for GService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
-type AdderClient interface {
-	Add(ctx context.Context, in *AddReq, opts ...grpc.CallOption) (*AddResp, error)
+type GServiceClient interface {
+	Add(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error)
+	Minus(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error)
 }
 
-type adderClient struct {
+type gServiceClient struct {
 	cc grpc.ClientConnInterface
 }
 
-func NewAdderClient(cc grpc.ClientConnInterface) AdderClient {
-	return &adderClient{cc}
+func NewGServiceClient(cc grpc.ClientConnInterface) GServiceClient {
+	return &gServiceClient{cc}
 }
 
-func (c *adderClient) Add(ctx context.Context, in *AddReq, opts ...grpc.CallOption) (*AddResp, error) {
-	out := new(AddResp)
-	err := c.cc.Invoke(ctx, "/api.Adder/Add", in, out, opts...)
+func (c *gServiceClient) Add(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error) {
+	out := new(Resp)
+	err := c.cc.Invoke(ctx, "/api.GService/Add", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-// AdderServer is the server API for Adder service.
-type AdderServer interface {
-	Add(context.Context, *AddReq) (*AddResp, error)
+func (c *gServiceClient) Minus(ctx context.Context, in *Req, opts ...grpc.CallOption) (*Resp, error) {
+	out := new(Resp)
+	err := c.cc.Invoke(ctx, "/api.GService/Minus", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
 }
 
-// UnimplementedAdderServer can be embedded to have forward compatible implementations.
-type UnimplementedAdderServer struct {
+// GServiceServer is the server API for GService service.
+type GServiceServer interface {
+	Add(context.Context, *Req) (*Resp, error)
+	Minus(context.Context, *Req) (*Resp, error)
 }
 
-func (*UnimplementedAdderServer) Add(context.Context, *AddReq) (*AddResp, error) {
+// UnimplementedGServiceServer can be embedded to have forward compatible implementations.
+type UnimplementedGServiceServer struct {
+}
+
+func (*UnimplementedGServiceServer) Add(context.Context, *Req) (*Resp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Add not implemented")
 }
-
-func RegisterAdderServer(s *grpc.Server, srv AdderServer) {
-	s.RegisterService(&_Adder_serviceDesc, srv)
+func (*UnimplementedGServiceServer) Minus(context.Context, *Req) (*Resp, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Minus not implemented")
 }
 
-func _Adder_Add_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(AddReq)
+func RegisterGServiceServer(s *grpc.Server, srv GServiceServer) {
+	s.RegisterService(&_GService_serviceDesc, srv)
+}
+
+func _GService_Add_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Req)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(AdderServer).Add(ctx, in)
+		return srv.(GServiceServer).Add(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/api.Adder/Add",
+		FullMethod: "/api.GService/Add",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(AdderServer).Add(ctx, req.(*AddReq))
+		return srv.(GServiceServer).Add(ctx, req.(*Req))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-var _Adder_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "api.Adder",
-	HandlerType: (*AdderServer)(nil),
+func _GService_Minus_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Req)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(GServiceServer).Minus(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/api.GService/Minus",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(GServiceServer).Minus(ctx, req.(*Req))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+var _GService_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "api.GService",
+	HandlerType: (*GServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
 			MethodName: "Add",
-			Handler:    _Adder_Add_Handler,
+			Handler:    _GService_Add_Handler,
+		},
+		{
+			MethodName: "Minus",
+			Handler:    _GService_Minus_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

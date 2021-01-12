@@ -4,15 +4,17 @@ package api;
 
 option go_package = "/api";
 
-service Adder {
-  rpc Add(AddReq) returns (AddResp) {}
+service GService {
+  rpc Add(Req) returns (Resp) {}
+  rpc Minus(Req) returns (Resp) {}
+
 }
 
-message AddReq {
+message Req {
   int32 x = 1;
   int32 y = 2;
 }
 
-message AddResp {
+message Resp {
   int32 result = 1;
 }

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"grpc/pkg/adder"
 	"grpc/pkg/api"
+	"grpc/pkg/gServer"
 	"log"
 	"net"
 
@@ -11,8 +11,8 @@ import (
 
 func main() {
 	s := grpc.NewServer()
-	srv := &adder.GRPCServer{}
-	api.RegisterAdderServer(s, srv)
+	srv := &gServer.GRPCServer{}
+	api.RegisterGServiceServer(s, srv)
 
 	l, err := net.Listen("tcp",":8080")
 	if err != nil {
