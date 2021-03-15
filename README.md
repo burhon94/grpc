@@ -10,7 +10,7 @@ pkg/api -- outDirectory
 #### Evans - util emulated gRPC client
 https://github.com/ktr0731/evans 
 
-##### /> ./evans -p[port] 8080 
+##### /> ./evans -p[port] 8080 -proto /TOProtoFile
 ##### /> Call.Adder
 
 https://www.youtube.com/watch?v=z-mHhobE0Pw
